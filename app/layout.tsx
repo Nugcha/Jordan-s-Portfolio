@@ -1,7 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Indie_Flower } from "next/font/google";
 import "./globals.css";
 
+const indieFlower = Indie_Flower({
+  weight: '400', // Indie Flower is only available in 400 weight
+  subsets: ['latin'],
+  display: 'swap', // 'swap' ensures text is visible while the font loads
+});
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
