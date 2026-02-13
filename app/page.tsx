@@ -2,7 +2,7 @@ import Image from "next/image";
 import Button_Primary from "./components/Button_Primary"
 import Button_danger from "./components/Button_danger";
 import Project_card from "./components/Project_card";
-
+import Navbar from "./components/Navbar";
 
 export default function Home() {
   return (
@@ -18,7 +18,10 @@ export default function Home() {
         <Button_Primary text={"Drag me!"}/>
         <Button_danger text={"Delete!"}/>
       </div>
+
         <Project_card title={"Ourblooms site"} date={"1/1/26"} info={"A solo project that copied a pre designed figma page"}/>
+        <Image src="/public/BubblesName.png" alt= "HeaderName" width={500} height={500}/> 
+        
     </div>
   );
 }

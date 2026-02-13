@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Indie_Flower } from "next/font/google";
 import "./globals.css";
+import Navbar from './components/Navbar';
 
 const indieFlower = Indie_Flower({
   weight: '400', // Indie Flower is only available in 400 weight
@@ -29,10 +30,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body> 
+      <Navbar />
+      <main>{children}</main>
       </body>
     </html>
   );

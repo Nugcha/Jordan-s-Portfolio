@@ -5,6 +5,7 @@ export default function projects(){
         <div>
             Projects Page
             <Project_card title={"Ourblooms site"} date={"1/1/26"} info={"A solo project that copied a pre designed figma page"}/>
+            <h2> </h2>
             </div>
     )
 }
