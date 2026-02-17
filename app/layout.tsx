@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Indie_Flower } from "next/font/google";
 import "./globals.css";
 import Navbar from './components/Navbar';
+import Footer from "./components/Footer";
 
 const indieFlower = Indie_Flower({
   weight: '400', // Indie Flower is only available in 400 weight
